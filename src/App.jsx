@@ -2,6 +2,7 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
+import Home from "./components/Home";
 
 
 
@@ -31,7 +32,7 @@ const problems = [{
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <Home/>,
   },{
     path:"/hello",
     element:<h1>Hello</h1>
@@ -50,9 +51,9 @@ function App() {
 
     return (<>
       <RouterProvider router={router} />
-    <div>
+    {/* <div>
         Finish the assignment! Look at the comments in App.jsx as a starting point
-    </div>
+    </div> */}
     </>
   )
 }
