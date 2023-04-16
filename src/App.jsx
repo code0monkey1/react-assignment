@@ -25,7 +25,7 @@ const problems = [{
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/hello" element={<h1>Hello</h1>}>
+    <Route path="/hello" element={<div><h1>Hello</h1></div>}>
       {/* <Route index element={<Home />} />
       <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} /> */}
@@ -35,8 +35,6 @@ const router = createBrowserRouter(
 
 function App({routes}) {
 
-
-    
 
     /* Add routing here, routes look like -
        /login - Login page
