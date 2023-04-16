@@ -1,4 +1,4 @@
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+
 
 /*
  * Temporary problems array schema
@@ -23,17 +23,8 @@ const problems = [{
         acceptance: "42%"
     }];
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-   <Route path="/" element={<Header />}>
-      <Route index element={<Home />} />
-      <Route path="login" element={<Login />} />
-      <Route path="register" element={<Register />} />
-  </Route>
-  )
-)
 
-function App({routes}) {
+function App() {
 
 
     /* Add routing here, routes look like -
@@ -44,7 +35,6 @@ function App({routes}) {
      */
 
     return (<>
-    <RouterProvider router={router}/>
     <div>
         Finish the assignment! Look at the comments in App.jsx as a starting point
     </div>
