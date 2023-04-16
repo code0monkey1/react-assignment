@@ -6,7 +6,8 @@ export default function ProblemStatement(props) {
     
     const styleClass={
       tableData:{
-        width:"20vw"
+        minWidth:"10vw",
+        padding:"2rem"
       }
     }
     return <tr>
