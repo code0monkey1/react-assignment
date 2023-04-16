@@ -10,14 +10,15 @@ import './index.css';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <h1>Hello world!</h1>,
-  },
+    element: <App/>,
+  },{
+    path:"/hello",
+    element:<h1>Hello</h1>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <App/>
-  <RouterProvider router={router} />
-
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
