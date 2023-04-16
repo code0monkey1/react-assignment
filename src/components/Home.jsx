@@ -6,7 +6,7 @@ const Home = () => {
 
     <div>Home</div>
     <>
-    {problemsArray.map(problem=><Problem data={problem} />)}
+    {problemsArray.map(problem=><Problem {...problem} />)}
     </>
 
   </>
