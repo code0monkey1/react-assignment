@@ -1,3 +1,8 @@
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
+
 
 
 /*
@@ -23,6 +28,15 @@ const problems = [{
         acceptance: "42%"
     }];
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+  },{
+    path:"/hello",
+    element:<h1>Hello</h1>
+  }
+]);
 
 function App() {
 
@@ -35,6 +49,7 @@ function App() {
      */
 
     return (<>
+      <RouterProvider router={router} />
     <div>
         Finish the assignment! Look at the comments in App.jsx as a starting point
     </div>
