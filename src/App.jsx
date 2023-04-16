@@ -4,10 +4,6 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 
-
-
-
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +11,10 @@ const router = createBrowserRouter([
   },{
     path:"/hello",
     element:<h1>Hello</h1>
+  },
+  {
+    path:"*",
+    element:<h1>Unknown</h1>
   }
 ]);
 
