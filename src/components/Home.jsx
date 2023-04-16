@@ -4,7 +4,26 @@ import Problem from './Problem'
 
 const Home = () => {
 
-    const styleClass={
+  
+  return (<>
+
+    <div>Home</div>
+    <>
+
+    <table>  
+     <Headings/>
+     {problemsArray.map(problem=><Problem key={problem.title} {...problem} />)}
+    </table>
+    </>
+
+  </>
+    
+  )
+}
+
+const Headings=()=>{
+ 
+  const styleClass={
       tableData_1:{
         minWidth:"10vw",
         padding:"2rem",
@@ -21,29 +40,19 @@ const Home = () => {
         backgroundColor:"skyBlue"
       }
     }
-  return (<>
-
-    <div>Home</div>
-    <>
-
-    <table>
-      <tr>
+   
+  return (
+     <tr>
         <td style={styleClass.tableData_1}>
             Title
         </td>
         <td style={styleClass.tableData_2}>
-            Acceptance %
+            Acceptance
         </td>
         <td style={styleClass.tableData_3}>
           Difficulty
         </td>
-     </tr>
-     {problemsArray.map(problem=><Problem key={problem.title} {...problem} />)}
-    </table>
-    </>
-
-  </>
-    
+      </tr>
   )
 }
 
