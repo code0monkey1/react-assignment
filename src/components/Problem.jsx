@@ -5,7 +5,15 @@ export default function ProblemStatement(props) {
     const difficulty = props.difficulty;
     
     const styleClass={
-      tableData:{
+      tableData_1:{
+        minWidth:"10vw",
+        padding:"2rem"
+      },
+       tableData_2:{
+        minWidth:"10vw",
+        padding:"2rem"
+      },
+       tableData_3:{
         minWidth:"10vw",
         padding:"2rem"
       }
