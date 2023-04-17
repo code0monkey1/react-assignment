@@ -6,16 +6,13 @@ const Problemset = () => {
 
   
   return (<>
-
-    <div>Home</div>
-    <>
-
+    <div style={{display: 'flex',justifyContent: 'center',flexDirection: 'column'}}>
+    <h1 style={{textAlign:"center"}}>Problems</h1>
     <table>  
      <Headings/>
      {problemsArray.map(problem=><Problem key={problem.title} {...problem} />)}
     </table>
-    </>
-
+   </div>
   </>
     
   )
