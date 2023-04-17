@@ -4,7 +4,7 @@ import './Login.css';
 const Login = () => {
   const usernameRef = useRef(null);
   const passwordRef = useRef(null);
- 
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(`Username: ${usernameRef.current.value}, Password: ${passwordRef.current.value}`);
@@ -22,7 +22,7 @@ const Login = () => {
           <label className="login-label" htmlFor="password">Password:</label>
           <input className="login-input" type="password" id="password" ref={passwordRef} />
         </div>
-         <div className="login-button-container">
+        <div className="login-button-container">
           <button className="login-button" type="submit">Login</button>
         </div>
       </form>
