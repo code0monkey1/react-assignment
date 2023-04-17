@@ -1,36 +1,30 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import './Login.css';
 
 const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleUsernameChange = (event) => {
-    setUsername(event.target.value);
-  };
-
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
-
+  const usernameRef = useRef(null);
+  const passwordRef = useRef(null);
+ 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(`Username: ${username}, Password: ${password}`);
+    console.log(`Username: ${usernameRef.current.value}, Password: ${passwordRef.current.value}`);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Username:
-        <input type="text" value={username} onChange={handleUsernameChange} />
-      </label>
-      <br />
-      <label>
-        Password:
-        <input type="password" value={password} onChange={handlePasswordChange} />
-      </label>
-      <br />
-      <button type="submit">Login</button>
-    </form>
+    <div className="login-container">
+      <h1 className="login-title">LeetCode</h1>
+      <form onSubmit={handleSubmit}>
+        <div className="login-input-container">
+          <label className="login-label" htmlFor="username">Username:</label>
+          <input className="login-input" type="text" id="username" ref={usernameRef} />
+        </div>
+        <div className="login-input-container">
+          <label className="login-label" htmlFor="password">Password:</label>
+          <input className="login-input" type="password" id="password" ref={passwordRef} />
+        </div>
+        <button className="login-button" type="submit">Login</button>
+      </form>
+    </div>
   );
 };
 
