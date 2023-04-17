@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-const Problem = () => {
+const ProblemPage = () => {
   const { id } = useParams();
 
   return (
@@ -12,4 +12,4 @@ const Problem = () => {
   );
 };
 
-export default Problem;
+export default ProblemPage;

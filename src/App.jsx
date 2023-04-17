@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import Login from "./components/Login";
+import ProblemPage from "./components/ProblemPage";
 import Problemset from "./components/Problemset";
 import Signup from './components/Signup';
 
@@ -31,7 +32,8 @@ const router = createBrowserRouter([
     path:'/problemset/all',
     element:<Problemset/>
   },{
-    path:'/problem/:id'
+    path:'/problem/:id',
+    element:<ProblemPage/>
   }
 ]);
 
