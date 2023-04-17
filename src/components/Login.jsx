@@ -22,7 +22,9 @@ const Login = () => {
           <label className="login-label" htmlFor="password">Password:</label>
           <input className="login-input" type="password" id="password" ref={passwordRef} />
         </div>
-        <button className="login-button" type="submit">Login</button>
+         <div className="login-button-container">
+          <button className="login-button" type="submit">Login</button>
+        </div>
       </form>
     </div>
   );
