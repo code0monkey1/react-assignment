@@ -41,13 +41,13 @@ const Headings=()=>{
   return (
      <tr>
         <td style={styleClass.tableData_1}>
-            Title
+            <h3>Title</h3>
         </td>
         <td style={styleClass.tableData_2}>
-            Acceptance
+            <h3>Acceptance</h3>
         </td>
         <td style={styleClass.tableData_3}>
-          Difficulty
+           <h3>Difficulty</h3>
         </td>
       </tr>
   )
