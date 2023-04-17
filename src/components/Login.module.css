@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to bottom left, #FFA500, #000000);
+  background: linear-gradient(to bottom left, sandybrown, #000000);
 }
 
 .login-title {
