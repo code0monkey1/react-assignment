@@ -9,7 +9,7 @@ const Home = () => {
       <nav className={styles['home-nav']}>
         <ul className={styles['home-nav-list']}>
           <li className={styles['home-nav-item']}>
-            <Link to="/login" className={styles['home-nav-link']}><button>Login</button></Link>
+            <Link to="/login" className={styles['home-nav-link']}> <button className={styles['login-button']} type="submit">Login</button></Link>
           </li>
           <li className={styles['home-nav-item']}>
              <Link to="/signup" className={styles['home-nav-link']}> <button className={styles['login-button']} type="submit">SignUp</button></Link>
