@@ -30,6 +30,8 @@ const router = createBrowserRouter([
   {
     path:'/problemset/all',
     element:<Problemset/>
+  },{
+    path:'/problem/:id'
   }
 ]);
 
