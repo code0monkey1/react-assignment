@@ -3,11 +3,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from "./components/Home";
 import Login from "./components/Login";
-import ProblemPage from "./components/ProblemPage";
-import Problemset from "./components/Problemset";
 import Signup from './components/Signup';
+import Home from "./pages/Home";
+import ProblemPage from "./pages/ProblemPage";
+import Problemset from "./pages/Problemset";
 
 const router = createBrowserRouter([
   {

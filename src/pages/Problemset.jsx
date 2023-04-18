@@ -1,6 +1,6 @@
 import React from 'react'
+import Problem from '../components/Problem'
 import problemsArray from '../data'
-import Problem from './Problem'
 
 const Problemset = () => {
 
